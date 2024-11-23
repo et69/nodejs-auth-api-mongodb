@@ -26,6 +26,6 @@ Your application will be available at http://localhost:3000.
     >Errors can happen a lot. Most of them are due to dependency version.
     
 2. For MongoDB:
-    >db.env file store env variables for username and password, creating new mongodb admin user. Healthcheck can be done ```mongosh -u $${MONGO_INITDB_ROOT_USERNAME} $${MONGO_INITDB_ROOT_PASSWORD} --eval "db.stats().ok"```. Env variables need to be called by double dollar sign(\$\$). 
+    >db.env file store env variables for username and password, creating new mongodb admin user. Healthcheck can be done ```mongosh -u $${MONGO_INITDB_ROOT_USERNAME} -p $${MONGO_INITDB_ROOT_PASSWORD} --eval "db.stats().ok"```. Env variables need to be called by double dollar sign(\$\$). 
 
 
